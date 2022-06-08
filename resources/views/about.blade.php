@@ -15,12 +15,13 @@
         <style>
             html, body {
                 background-color: #fff;
-                color: #636b6f;
+                color: black;
                 font-family: 'Nunito', sans-serif;
-                font-weight: 200;
+                font-weight: 700;
                 height: 100vh;
                 margin: 0;
                 margin-bottom: 2rem;
+                background-color: #c6d360; 
             }
 
             a{
@@ -38,7 +39,7 @@
           <a  href="{{ url('/') }}">Home</a>
         </nav>
 
-        <div id="heading" class="text-center">
+        <div id="heading" class="text-center mt-5">
             <h3>film: {{ $title }}</h3>
             <p>{{$genre}}</p>
             <h5>{{$directer}}</h5>

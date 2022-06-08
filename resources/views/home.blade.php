@@ -20,6 +20,8 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                text-align:center;
+                background-color: #daeac1; 
             }
             a{
                 text-decoration: none;
@@ -38,7 +40,7 @@
           <a  href="{{ url('/about') }}">About</a>
         </nav>
 
-        <h3>
+        <h3 class="mt-3">
             {{$msg}}
         </h3>
 
