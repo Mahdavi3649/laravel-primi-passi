@@ -31,7 +31,7 @@
             }
         </style>
     </head>
-    
+
     <body>
 
         <nav class="nav justify-content-center bg-success">
@@ -41,7 +41,7 @@
         <div id="heading" class="text-center">
             <h3>film: {{ $title }}</h3>
             <p>{{$genre}}</p>
-            <h5>$directer</h5>
+            <h5>{{$directer}}</h5>
             @foreach ($movies as $movie)
                 <p>{{ $movie }}</p>
             @endforeach
