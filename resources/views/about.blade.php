@@ -20,27 +20,32 @@
                 font-weight: 200;
                 height: 100vh;
                 margin: 0;
+                margin-bottom: 2rem;
             }
+
             a{
                 text-decoration: none;
                 color: black;
                 font-weight: 800;
                 padding: 0.7rem 1rem;
             }
-
         </style>
     </head>
-
+    
     <body>
 
         <nav class="nav justify-content-center bg-success">
           <a  href="{{ url('/') }}">Home</a>
-          <a  href="{{ url('/about') }}">About</a>
         </nav>
 
-        <h3>
-            {{$msg}}
-        </h3>
+        <div id="heading" class="text-center">
+            <h3>film: {{ $title }}</h3>
+            <p>{{$genre}}</p>
+            <h5>$directer</h5>
+            @foreach ($movies as $movie)
+                <p>{{ $movie }}</p>
+            @endforeach
+        </div>
 
     </body>
 </html>
